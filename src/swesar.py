@@ -85,7 +85,7 @@ async def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Terminal client for downloading images from Swea Portal.")
+    parser = argparse.ArgumentParser(description="Terminal client for downloading Sentinel images from Swea Portal.")
     parser.add_argument('products',
                         help="ESA Product name, or filepath to downloaded cart. e.g. S1A_IW_GRDH_1SDV_20180224T162111_20180224T162136_020751_0238FE_48D1 or products.meta4")
     args = parser.parse_args()
