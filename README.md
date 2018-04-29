@@ -1,5 +1,5 @@
 # swesar
-> Terminal client for downloading images from [Swea Portal](https://swea.rymdstyrelsen.se/portal/).
+> Terminal client for downloading Sentinel images from [Swea Portal](https://swea.rymdstyrelsen.se/portal/).
 
 ## Usage Example
 
