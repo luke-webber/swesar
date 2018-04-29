@@ -11,7 +11,7 @@ def load_products(fp):
     Loads product names from scihub downloaded cart.
 
     :param fp: (String) Filepath to products.meta4
-    :return: (List) Esa formatted product names
+    :return: (List) ESA formatted product names
     """
     with open(fp) as fh:
         xml_doc = xmltodict.parse(fh.read())
@@ -24,7 +24,7 @@ def load_products(fp):
 
 def gen_swea_name(esa_name):
     """
-    Reformats esa style product name using swea naming conventions.
+    Reformats ESA style product name using Swea naming conventions.
 
     :param esa_name: (String) Esa formatted product name
     :return: (String) Swea formatted product name
@@ -36,7 +36,7 @@ def gen_swea_name(esa_name):
 
 def gen_swea_id(swea_name):
     """
-    Fetches swea product id from swea Rest API.
+    Fetches Swea product id from Swea Rest API.
 
     :param swea_name: (String) Swea formatted product name
     :return: (String) Swea product id
@@ -52,7 +52,7 @@ def gen_swea_id(swea_name):
 
 def get_swea_prod(swea_id):
     """
-    Downloads swea product.
+    Downloads Swea product.
 
     :param swea_id: (String) Swea product id
     :return: None
@@ -85,7 +85,7 @@ async def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Terminal client for downloading images for Swea Portal.")
+    parser = argparse.ArgumentParser(description="Terminal client for downloading images from Swea Portal.")
     parser.add_argument('products',
                         help="ESA Product name, or filepath to downloaded cart. e.g. S1A_IW_GRDH_1SDV_20180224T162111_20180224T162136_020751_0238FE_48D1 or products.meta4")
     args = parser.parse_args()
